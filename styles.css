@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+:root {
+  --body-bg-color: #faf7fd;
+  --purple: #bb99dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+htm {
+  font-size: 93.75%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-content: center;
+
+  font: 300 1rem "Poppins", sans-serif;
+  background: var(--body-bg-color);
+  color: var(--purple);
+}
+
+header,
+section,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header,
+main {
+  width: 400px;
+}
+
+header {
+  margin-top: 100px;
+  margin-bottom: 33px;
+}
+
+.avatar {
+  width: 213px;
+  height: 213px;
+  margin-bottom: 15px;
+
+  border: 3px solid var(--purple);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  margin: 3px;
+
+  border-radius: 50%;
+}
+
+.profile p {
+  text-align: center;
+}
+
+main {
+  width: 400px;
+  height: 200px;
+
+  margin-bottom: 33px;
+
+  padding-top: 0;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+
+  align-content: center;
+}
+
+.button {
+  width: 326px;
+  height: 49px;
+  margin-bottom: 16px;
+
+  border: 2px solid var(--purple);
+  border-radius: 4px;
+  background: none;
+
+  padding: 14px;
+
+  font-weight: 600;
+  color: var(--purple);
+  text-align: center;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  /* transition: 2s; */
+}
+
+a {
+  font-weight: 600;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: var(--purple);
+
+  cursor: pointer;
+}
+
+a:hover,
+.button:hover {
+  background: var(--purple);
+  color: var(--body-bg-color);
+  transition: 500ms;
+}
+
+footer {
+  justify-content: center;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+}
+
+footer a + a {
+  margin-left: 29px;
+}
+
+footer a:hover {
+  background: none;
+}
+
+.socialMedia {
+  flex-wrap: nowrap;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
