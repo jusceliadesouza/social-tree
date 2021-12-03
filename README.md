@@ -33,7 +33,7 @@
   </p>
 </div>
 
-<div id="#">
+<!--div id="#">
   <h2></h2>
 
   <p align="justify"></p>
@@ -43,7 +43,7 @@
   <h2></h2>
 
   <p align="justify"></p>
-</div>
+</div--> 
 
 <div id="layout">
   <h2>🎨Layout</h2>
